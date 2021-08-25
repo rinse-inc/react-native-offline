@@ -113,7 +113,8 @@ export const createReleaseQueue = (
     const { isConnected, isQueuePaused } = state.network;
     if (isConnected && !isQueuePaused && shouldDequeueSelector(state)) {
       next(removeActionFromQueue(action));
-      next(action);
+      // eslint-disable-next-line no-await-in-loop
+      await next(action);
       // eslint-disable-next-line
       await wait(delay);
     } else {
