@@ -1,5 +1,5 @@
 {
-  "name": "react-native-offline",
+  "name": "@rinse/react-native-offline",
   "version": "5.8.0",
   "description": "Handy toolbelt to deal with offline mode in React Native applications. Cross-platform, provides a smooth redux integration.",
   "author": "Raul Gomez Acuña <raulgdeveloper@gmail.com> (https://github.com/rgommezz)",
